@@ -19,22 +19,6 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-
-        td2: tap_dance_2 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp ENTER>, <&kp ESCAPE>;
-        };
-    };
-
-    macros {
-        escapeand0: escapeand0 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp ESCAPE &to 0>;
-            label = "ESCAPEAND0";
-        };
     };
 
     keymap {
